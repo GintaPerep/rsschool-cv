@@ -1,3 +1,3 @@
 # Ginta Perepjolkina
 
-![Photo](https://photos.app.goo.gl/EW7nEk1rzT35S6Sb7)
+![my photo](https://i.im.ge/2022/09/13/1QpOa8.my-photo.th.jpg)
