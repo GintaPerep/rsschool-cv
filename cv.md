@@ -4,6 +4,7 @@
 
 ### __*Junior front-end developer*__
 ---
+
 ## __*Contact information*__
 > _**Phone:**_ +371 26012881 <br>
 > _**E-mail:**_ ginta.aizstrauta@gmail.com <br>
@@ -12,18 +13,64 @@
 > _**Discord:**_ Ginta Perepjolkina#5856 <br>
 > _**Location:**_ Riga, Latvia <br>
 
-___
+---
 
 ## __*About me*__
-
 > *So far, I have successfully worked in the banking and financial industry for more than 15 years with companies and private clients. My previous work experience remains in history, because I have decided to change my profession to Front-end developer. This is my biggest challenge in life and I will definitely achieve it. Starting from January 2022, I am learning programming by self-learning using courses: Linkedin.com, Udemy.com and youtube.com. At the given moment, I started training in the RS School program: JavaScript Mentoring (Basic level). I'm open to everything new.*
 
 
 ---
+
 ## __*Skills*__
 > - MS Office (Excel, World, PowerPoint, etc.) <br>
 > - HTML, CSS, Javascript basic <br>
 > - SQL basic <br>
 > - GitHub, Visual Studio Code <br>
 
+
 ---
+
+## __*Code Example*__
+```javascript
+ 
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("#login");
+    const createAccountForm = document.querySelector("#createAccount");
+
+    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+      e.preventDefault();
+      loginForm.classList.add("form--hidden");
+      createAccountForm.classList.remove("form--hidden");  
+    })
+
+    document.querySelector("#linkLogin").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.remove("form--hidden");
+        createAccountForm.classList.add("form--hidden");  
+      })
+
+    loginForm.addEventListener("submit", e => {
+      e.preventDefault();
+
+      //Perform your AJAX/Fetch login
+
+      setFormMessage(loginForm, "error", i18next.t('wrong-user-name-pass'));
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+      inputElement.addEventListener("blur", e => {
+        if (e.target.id === "nameSurname-id" && e.target.value.length > 0 && e.target.value.length < 10) {
+          setInputError(inputElement, i18next.t('error2'));
+        }
+      });
+
+      inputElement.addEventListener("input", e => {
+        clearInputError(inputElement);
+      });
+    });
+});
+```
+
+---
+
+## __*Experience*__
