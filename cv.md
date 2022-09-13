@@ -7,7 +7,11 @@
 ## __*Contact information*__
 > _**Phone:**_ +371 26012881 <br>
 > _**E-mail:**_ ginta.aizstrauta@gmail.com <br>
-> _**GitHub:**_ [GintaPerep] (https://github.com/GintaPerep) <br>
+> _**GitHub:**_ [GintaPerep](https://github.com/GintaPerep) <br>
+> _**LinkedIn:**_ [Ginta Perepjolkina](linkedin.com/in/ginta-perepjolkina-0aa88a16) <br>
 > _**Discord:**_ Ginta Perepjolkina#5856 <br>
-> _**Location:**_ Riga, Latvia
----
+> _**Location:**_ Riga, Latvia <br>
+
+___
+
+## __*About me*__
