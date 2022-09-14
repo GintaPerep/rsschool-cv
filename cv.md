@@ -96,3 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
+## __*Languages*__
+> * **Latvian** - Native; <br>
+> * **Russian** - Fluent speaking, reading (A2); <br>
+> * **English** - B1; <br>
+> * **German** - A2; <br>
