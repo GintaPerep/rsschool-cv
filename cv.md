@@ -87,3 +87,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
+## __*Education*__
+> * **RS School** - Stage 0 - 2022 -; <br>
+> * **Riga Technical University** - Master of social science in management 2008-2010; <br>
+> * **Riga Technical University** - Bachelor of social science in management 2004-2008; <br>
+> * **Riga's Commercy gymnasium** - 2001-2004; <br>
+
+
+---
+
