@@ -71,6 +71,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 ```
 
+
 ---
 
 ## __*Experience*__
+> * **Media Stream** - 2004-2005 Office secretary; <br>
+> * **Nordic Training International** - 2005-2006 Office executive; <br>
+> * **SEB banka:** 
+>     * 2006-2008 Customer Service specialist; <br>
+>     * 2008-2012 Security services; <br>
+>     * 2012-2014 Investments - Portfolio Administrator; <br>
+>     * 2016-2017 Investment Portfolio Control Specialist; <br>
+>     * 2019-2022 Account Manager Assistant; <br> 
+
+
+---
+
