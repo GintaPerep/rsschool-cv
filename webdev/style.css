@@ -1,104 +1,50 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
-html, body, div, span, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    line-height:1;
+	line-height: 1;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+ol, ul {
+	list-style: none;
 }
-
-nav ul {
-    list-style:none;
-}
-
 blockquote, q {
-    quotes:none;
+	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+	content: '';
+	content: none;
 }
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
 table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* roboto-regular - latin */
@@ -107,8 +53,8 @@ input, select {
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../assets/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../assets/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./assets/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-500 - latin */
   @font-face {
@@ -116,8 +62,8 @@ input, select {
     font-style: normal;
     font-weight: 500;
     src: local(''),
-         url('../assets/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../assets/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./assets/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
   @font-face {
@@ -125,8 +71,8 @@ input, select {
     font-style: normal;
     font-weight: 700;
     src: local(''),
-         url('../assets/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../assets/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./assets/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   html{
@@ -135,5 +81,136 @@ input, select {
   *, *::before, *::after{
     box-sizing: inherit;
   }
+
+  body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+
+  /*Header styles start*/
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 95px;
+    z-index: 1;
+  }
+
+  .header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+ .header__logo{
+    position: absolute;
+    width: 44px;
+    height: 45px;
+    top: 25px;
+    bottom: 26px;
+    margin-left: 778px;
+    margin-right: 778px;    
+ }
+
+ .header__list{
+    position: absolute;
+    width: 1600px;
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+ }
+
+ .header__item-about{
+    position: absolute;
+    width: 38px;
+    height: 21px;
+    left: 502px;
+    right: 1060px;
+    top: 38px;
+    bottom: 37px;
+    font-weight: 500;
+    border-bottom: 1px solid #ffffff;
+ }
+
+ .header__item-syllabus{
+    position: absolute;
+    width: 53px;
+    left: 625px;
+    right: 922px;
+    font-weight: 400;
+    top: 38px;
+    bottom: 37px;
+ }
+
+ .header__item-projects{
+    position: absolute;
+    width: 52px;
+    top: 38px;
+    bottom: 37px;
+    left: 922px;
+    right: 626px;
+    font-weight: 400;
+ }
+
+ .header__item-faq{
+    position: absolute;
+    width: 26px;
+    top: 38px;
+    bottom: 37px;
+    left: 1059px;
+    font-weight: 400;
+    right: 515px;
+ }
+
+ .header__link{
+   color: #ffffff; 
+   text-decoration: none;
+ }
+
+ .header__link:hover, .header__link:focus, .header__link:active{
+    opacity: 0.8;
+ }
  
-  
+   /*Header styles end*/
+
+    /*Your life block styles start*/
+.your-life-block{
+    width: 1600px;
+    height: 744px;
+    background-image: url(./assets/you-life-block-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -22px;
+    bottom: -22px;
+}
+
+h1{
+    margin-top: 230px;
+    margin-left: 435px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+    /*Your life block styles end*/
