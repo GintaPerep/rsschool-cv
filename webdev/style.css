@@ -83,6 +83,7 @@ table {
   }
 
   body{
+    width: 1600px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -185,6 +186,7 @@ table {
 
     /*Your life block styles start*/
 .your-life-block{
+   
     width: 1600px;
     height: 744px;
     background-image: url(./assets/you-life-block-bg.jpg) ;
@@ -198,7 +200,7 @@ table {
     bottom: -22px;
 }
 
-h1{
+.intro-title{
     margin-top: 230px;
     margin-left: 435px;
     font-weight: 700;
@@ -209,25 +211,21 @@ h1{
     text-align: center;
     letter-spacing: 4.5px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.info-text{
+.intro-subtitle{
     width: 1600px;
     text-align: center;
-    }
-
-.information{
     position: absolute;
     height: 50px;
     width: 504px;
     left: calc(50% - 504px/2);
-    top: 305px;
+    top: calc(50% - 50px/2 - 22px);
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
-    text-align: center;
-   
+    margin-bottom: 30px;
 }
 
 .btn-main{
@@ -244,10 +242,67 @@ h1{
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 183px;
 }
 
-.btn-main:hover, .btn-main:focus{
+.btn-main:hover, .btn-main:focus,.btn-main:focus{
    background:  #009CC2;
 }
 
-    /*Your life block styles end*/
+.socials{
+position: absolute;
+width: 170px;
+height: 20px;
+left: calc(50% - 170px/2);
+bottom: 90px;
+}
+
+.mail{
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+}
+
+.facebook{
+position: absolute;
+width: 20px;
+height: 20px;
+left: 50px;
+top: 0px;
+}
+
+.insta{
+position: absolute;
+left: 58.82%;
+right: 29.41%;
+top: 0%;
+bottom: 0%;
+}
+
+.telegram{
+position: absolute;
+width: 20px;
+height: 20px;
+left: 150px;
+top: 0px;
+}
+
+.mail:hover, .mail:focus{
+   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg) brightness(93%) contrast(92%);
+ }
+
+ .facebook:hover, .facebook:focus{
+   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg) brightness(93%) contrast(92%);
+ }
+
+ .insta:hover, .insta:focus{
+   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg) brightness(93%) contrast(92%);
+ }
+
+ .telegram:hover, .telegram:focus{
+   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg) brightness(93%) contrast(92%);
+ }
+ 
+    /*Your life block styles end
