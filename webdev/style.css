@@ -237,13 +237,17 @@ h1{
     padding: 15px 47px;
     position: absolute;
     left: calc(50% - 184px/2);
-    top: calc(50% - 46px/2 + 35px);
+    top: calc(50% - 46px/2 + 56px);
     background: #00AFDB;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.btn-main:hover, .btn-main:focus{
+   background:  #009CC2;
 }
 
     /*Your life block styles end*/
