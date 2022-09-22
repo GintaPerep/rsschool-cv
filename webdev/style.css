@@ -341,7 +341,7 @@ h1 {
 .btn-main:focus,
 .btn-main:focus {
   background: #009cc2;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .socials {
@@ -388,28 +388,28 @@ h1 {
 .mail:focus {
   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg)
     brightness(93%) contrast(92%);
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .facebook:hover,
 .facebook:focus {
   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg)
     brightness(93%) contrast(92%);
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .insta:hover,
 .insta:focus {
   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg)
     brightness(93%) contrast(92%);
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .telegram:hover,
 .telegram:focus {
   filter: invert(24%) sepia(16%) saturate(7316%) hue-rotate(173deg)
     brightness(93%) contrast(92%);
-    cursor:pointer;
+  cursor: pointer;
 }
 
 /*Your life block styles end*/
@@ -801,7 +801,7 @@ h1 {
 .btn-learn-more:focus,
 .btn-learn-more:active {
   background: #009cc2;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /*Implement block styles end*/
@@ -906,7 +906,7 @@ h1 {
 .btn-submit:hover,
 .btn-submit:focus {
   background: #009cc2;
-  cursor:pointer;
+  cursor: pointer;
 }
 /*Sing up block styles end*/
 
@@ -988,87 +988,93 @@ h1 {
 }
 
 .icon-wrapper-apple {
-width: 59px;
-height: 46px;
-background: #009CC2;
-border-radius: 0px;
-flex: none;
-order: 1;
-flex-grow: 0;
+  width: 59px;
+  height: 46px;
+  background: #009cc2;
+  border-radius: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .apple {
-position: absolute;
-width: 17px;
-height: 20px;
-left: 148.51px;
-top: calc(50% - 20px/2);
+  position: absolute;
+  width: 17px;
+  height: 20px;
+  left: 148.51px;
+  top: calc(50% - 20px / 2);
 }
 
 .btn-play-market {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-position: absolute;
-width: 186px;
-height: 46px;
-left: 815px;
-top: 238px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 186px;
+  height: 46px;
+  left: 815px;
+  top: 238px;
 }
 
 .form-fild-android {
- width: 127px;
-height: 46px;
-background: #00AFDB;
-border-radius: 0px;
-flex: none;
-order: 0;
-flex-grow: 0;
+  width: 127px;
+  height: 46px;
+  background: #00afdb;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .android-text {
   position: absolute;
-width: 94px;
-height: 16px;
-left: 16px;
-top: 15px;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-text-transform: uppercase;
+  width: 94px;
+  height: 16px;
+  left: 16px;
+  top: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .icon-wrapper-android {
   width: 59px;
-height: 46px;
-background: #009CC2;
-border-radius: 0px;
-flex: none;
-order: 1;
-flex-grow: 0;
+  height: 46px;
+  background: #009cc2;
+  border-radius: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .android {
   position: absolute;
-width: 20px;
-height: 23px;
-left: 146.99px;
-top: calc(50% - 23px/2 + 0.5px);
+  width: 20px;
+  height: 23px;
+  left: 146.99px;
+  top: calc(50% - 23px / 2 + 0.5px);
 }
 
-.form-fild-android:hover, .form-fild-android:focus, .form-fild-apple:hover, .form-fild-apple:focus{
-background: #009CC2;
-cursor:pointer;
+.form-fild-android:hover,
+.form-fild-android:focus,
+.form-fild-apple:hover,
+.form-fild-apple:focus {
+  background: #009cc2;
+  cursor: pointer;
 }
 
-.icon-wrapper-android:hover, .icon-wrapper-android:focus, .icon-wrapper-apple:hover, .icon-wrapper-apple:focus {
-  background: #009CC2;
+.icon-wrapper-android:hover,
+.icon-wrapper-android:focus,
+.icon-wrapper-apple:hover,
+.icon-wrapper-apple:focus {
+  background: #009cc2;
   opacity: 0.95;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /*Download block styles end*/
@@ -1082,6 +1088,108 @@ footer {
   left: 0px;
   top: 3920px;
   background: #000000;
+}
+
+.copyright {
+  position: absolute;
+  width: 170px;
+  height: 20px;
+  left: 1270px;
+  top: 73px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #818181;
+}
+
+.logo {
+  position: absolute;
+  width: 44px;
+  height: 45px;
+  left: 778px;
+  top: 60px;
+  background-image: url(./assets/logo.svg);
+}
+
+.info {
+  position: absolute;
+  width: 236px;
+  height: 20px;
+  left: 160px;
+  top: 73px;
+}
+
+.additional-mnu {
+  position: absolute;
+  width: 236px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+
+.teams {
+  position: absolute;
+  width: 65px;
+  height: 20px;
+  left: 171px;
+  top: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.mnu-divider-1 {
+  position: absolute;
+  width: 8px;
+  height: 0px;
+  left: 151px;
+  top: 10px;
+  border: 1px solid #4e4e4e;
+  transform: rotate(-90deg);
+}
+
+.privacy {
+  position: absolute;
+  width: 46px;
+  height: 20px;
+  left: 85px;
+  top: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.mnu-divider-2 {
+  position: absolute;
+  width: 8px;
+  height: 0px;
+  left: 65px;
+  top: 10px;
+  border: 1px solid #4e4e4e;
+  transform: rotate(-90deg);
+}
+
+.credits {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link:hover,
+.link:focus {
+  color: #b0e6e4;
+  cursor: pointer;
 }
 
 /*Footer block styles end*/
