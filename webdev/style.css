@@ -268,7 +268,7 @@ body {
 .your-life-block {
   width: 1600px;
   height: 744px;
-  background-image: url(./assets/you-life-block-bg.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/you-life-block-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -802,8 +802,6 @@ width: 1600px;
 height: 524px;
 left: 0px;
 top: 2932px;
-margin-bottom: 615px;
-
 }
 
 .sing-up-image {
@@ -813,7 +811,6 @@ left: -160px;
 top: -615px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/pexels-christina-morillo.png); 
 background-repeat: no-repeat;
-
 }
 
 .forma {
@@ -873,7 +870,7 @@ background-repeat: no-repeat;
    left: 0px;
    top: 0px;
    background: #FFFFFF;
-   border-radius: 0px;
+   border-radius: 0px;   
 }
 
 .input {
@@ -889,7 +886,37 @@ align-items: flex-end;
 color: #373737;
 }
 
+::placeholder {
+  padding-left: 24px;
+}
+
 .btn-submit:hover, .btn-submit:focus {
    background: #009CC2;
 }
 /*Sing up block styles end*/
+
+/*Download block styles start*/
+
+.download-block {
+  position: absolute;
+  width: 1600px;
+  height: 464px;
+  left: 0px;
+  top: 3456px;   
+  background: #F5F6F7;
+}
+
+/*Download block styles end*/
+
+/*Footer block styles start*/
+
+footer {
+position: absolute;
+width: 1600px;
+height: 185px;
+left: 0px;
+top: 3920px;
+background: #000000;
+}
+
+/*Footer block styles end*/
