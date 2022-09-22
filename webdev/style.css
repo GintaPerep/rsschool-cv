@@ -166,7 +166,10 @@ html {
 }
 
 body {
+  position: relative;
   width: 1600px;
+  height: 4105px;
+  top: 0px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -183,8 +186,9 @@ body {
   left: 0;
   width: 1600px;
   height: 95px;
-  z-index: 1;
+  z-index: 2;
   background: #00000066;
+  background-size: auto;
   margin-bottom: 135px;
 }
 
@@ -268,12 +272,12 @@ body {
 .your-life-block {
   width: 1600px;
   height: 744px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/you-life-block-bg.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/you-life-block-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
-  z-index: -1;
 }
 
 .bg-image-wrapper {
@@ -716,6 +720,7 @@ h1 {
   top: 2090px;
   background: #ffffff;
   margin-bottom: 666px;
+  z-index: 1;
 }
 
 .implement-image {
@@ -793,105 +798,106 @@ h1 {
 
 /*Implement block styles end*/
 
-
 /*Sing up block styles start*/
 
 .sing-up-block {
-position: absolute;
-width: 1600px;
-height: 524px;
-left: 0px;
-top: 2932px;
+  position: absolute;
+  width: 1600px;
+  height: 524px;
+  left: 0px;
+  top: 2932px;
+  background: url(./assets/pexels-christina-morillo.png);
+  background-repeat: no-repeat;
 }
 
 .sing-up-image {
-width: 1920px;
-height: 1281px;
-left: -160px;
-top: -615px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/pexels-christina-morillo.png); 
-background-repeat: no-repeat;
+  width: 1920px;
+  height: 1281px;
+  margin-left: -160px;
+  margin-top: -615px;
+  background: #00000099;
+  z-index: 0;
 }
 
 .forma {
-   position: absolute;
-   width: 406px;
-   height: 104px;
-   left: 597px;
-   top: 200px;
+  position: absolute;
+  width: 406px;
+  height: 104px;
+  left: 597px;
+  top: 200px;
 }
 
 .sing-up-title {
-   position: absolute;
-   height: 28px;
-   left: 13px;
-   top: 0px;
-   font-weight: 700;
-   font-size: 24px;
-   line-height: 28px;
-   display: flex;
-   align-items: flex-end;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   padding-bottom: 30px; 
+  position: absolute;
+  height: 28px;
+  left: 13px;
+  top: 0px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
-
 .sing-up-wrapper {
-   position: absolute;
-   width: 406px;
-   height: 46px;
-   left: 0px;
-   top: 45px;
+  position: absolute;
+  width: 406px;
+  height: 46px;
+  left: 0px;
+  top: 45px;
 }
 
 .btn-submit {
-   position: absolute;
-   width: 66px;
-   height: 46px;
-   left: 340px;
-   top: 0px;
-   background: #00AFDB;
-   border-radius: 0px;}
-
+  position: absolute;
+  width: 66px;
+  height: 46px;
+  left: 340px;
+  top: 0px;
+  background: #00afdb;
+  border-radius: 0px;
+}
 
 .btn-check-icon {
-   position: absolute;
-   width: 16.52px;
-   height: 13.22px;
-   left: calc(50% - 16.52px/2);
-   top: calc(50% - 13.22px/2);
-   }
+  position: absolute;
+  width: 16.52px;
+  height: 13.22px;
+  left: calc(50% - 16.52px / 2);
+  top: calc(50% - 13.22px / 2);
+}
 
 .input-email {
-   position: absolute;
-   width: 340px;
-   height: 46px;
-   left: 0px;
-   top: 0px;
-   background: #FFFFFF;
-   border-radius: 0px;   
+  position: absolute;
+  width: 340px;
+  height: 46px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border-radius: 0px;
 }
 
 .input {
-position: absolute;
-width: 39px;
-height: 20px;
-top: 13px;
-font-weight: 400;
-font-size: 14px;
-line-height: 140%;
-display: flex;
-align-items: flex-end;
-color: #373737;
+  position: absolute;
+  width: 39px;
+  height: 20px;
+  top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: flex-end;
+  color: #373737;
 }
 
 ::placeholder {
   padding-left: 24px;
 }
 
-.btn-submit:hover, .btn-submit:focus {
-   background: #009CC2;
+.btn-submit:hover,
+.btn-submit:focus {
+  background: #009cc2;
 }
 /*Sing up block styles end*/
 
@@ -902,8 +908,158 @@ color: #373737;
   width: 1600px;
   height: 464px;
   left: 0px;
-  top: 3456px;   
-  background: #F5F6F7;
+  top: 3456px;
+  background: #f5f6f7;
+}
+
+.download-title {
+  position: absolute;
+  width: 250px;
+  height: 28px;
+  left: 675px;
+  top: 120px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.download-subtitle {
+  position: absolute;
+  width: 480px;
+  height: 40px;
+  left: 560px;
+  top: 168px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #4e4e4e;
+  margin-bottom: 30px;
+}
+
+.btn-apple-store {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 186px;
+  height: 46px;
+  left: 599px;
+  top: 238px;
+}
+
+.form-fild-apple {
+  width: 127px;
+  height: 46px;
+  background: #00afdb;
+}
+
+.apple-text {
+  position: absolute;
+  width: 91px;
+  height: 16px;
+  left: 18px;
+  top: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon-wrapper-apple {
+width: 59px;
+height: 46px;
+background: #009CC2;
+border-radius: 0px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.apple {
+position: absolute;
+width: 17px;
+height: 20px;
+left: 148.51px;
+top: calc(50% - 20px/2);
+}
+
+.btn-play-market {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 186px;
+height: 46px;
+left: 815px;
+top: 238px;
+}
+
+.form-fild-android {
+ width: 127px;
+height: 46px;
+background: #00AFDB;
+border-radius: 0px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.android-text {
+  position: absolute;
+width: 94px;
+height: 16px;
+left: 16px;
+top: 15px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+text-transform: uppercase;
+}
+
+.icon-wrapper-android {
+  width: 59px;
+height: 46px;
+background: #009CC2;
+border-radius: 0px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.android {
+  position: absolute;
+width: 20px;
+height: 23px;
+left: 146.99px;
+top: calc(50% - 23px/2 + 0.5px);
+}
+
+.form-fild-android:hover, .form-fild-android:focus, .form-fild-apple:hover, .form-fild-apple:focus{
+background: #009CC2;
+cursor:pointer;
+}
+
+.icon-wrapper-android:hover, .icon-wrapper-android:focus, .icon-wrapper-apple:hover, .icon-wrapper-apple:focus {
+  background: #009CC2;
+  opacity: 0.95;
+  cursor:pointer;
 }
 
 /*Download block styles end*/
@@ -911,12 +1067,12 @@ color: #373737;
 /*Footer block styles start*/
 
 footer {
-position: absolute;
-width: 1600px;
-height: 185px;
-left: 0px;
-top: 3920px;
-background: #000000;
+  position: absolute;
+  width: 1600px;
+  height: 185px;
+  left: 0px;
+  top: 3920px;
+  background: #000000;
 }
 
 /*Footer block styles end*/
