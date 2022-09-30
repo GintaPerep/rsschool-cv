@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Opens Sans";
+  src: url(./assets/fonts/open-sans-v34-latin-regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pt-sans-narrow-700";
+  src: url(./assets/fonts/pt-sans-narrow-v17-latin-700.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pt-sans-narrow-regular";
+  src: url(./assets/fonts/pt-sans-narrow-v17-latin-regular.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "segoe-xp-light";
+  src: url(./assets/fonts/segoe-wp-light.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeWP";
+  src: url(./assets/fonts/SegoeWP.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url(./assets/fonts/Asap-Regular.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lucida-sans-italic";
+  src: url(./assets/fonts/Lucida-Sans-Italic.ttf) format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+:root {
+  --ctr-section-free: #474747;
+  --ctr-social: #f5c507;
+  --ctr-info: #ffffff;
+  --ctr-design: #e2e2e1;
+  --ctr-video-info: #ec9e03;
+  --ctr-nav-title: #9b7d08;
+  --ctr-chat-text: #8f8e8e;
+  --ctr-bullet-text: #a9a9a7;
+  --ctr-logo: #f5c506;
+  --ctr-nav-icons: #b99403;
+
+  --ff-logo: "lucida-sans-italic", serif;
+  --ff-navigation-info: "SegoeWP", serif;
+  --ff-design-text: "Segoe UI", serif;
+  --ff-chat: "Arial", serif;
+  --ff-loren-ipsum: "Open Sans", serif;
+  --ff-title: "Asap", serif;
+  --ff-info-title: "pt-sans-narrow-regular", serif;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-family: serif;
+  color: var(--ctr-info);
+  font-size: 1rem;
+}
+
+body {
+  position: relative;
+  background-color: #ececec;
+  margin: 0;
+}
+
+/*HEADER*/
+header {
+	height: 63px;
+	
+}
+
+nav ul {
+  display: flex;
+  position: absolute;
+  list-style: none;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--ctr-logo);
+  justify-content:space-around;
+}
+
+nav a {
+  display: inline-block;
+  color: var(--ctr-nav-title);
+  height: 63px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1e7311;
+  text-decoration: underline;
+}
+
+.logo {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.parent-logo {
+	width: 184px;
+	background-color: var(--ctr-section-free);
+	background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%);
+	text-decoration: none;
+}
+
+.parent-logo:hover,.parent-logo:focus {
+	text-decoration: none;
+	opacity: 0.75;
+	
+}
+.title {
+	font-family: var(--ff-logo);
+	text-align: center;
+	letter-spacing: 0px;
+	font-size: 19px;
+	text-transform: uppercase;
+	color: var(--ctr-info);
+	filter: drop-shadow(1px 1.732px 0px rgba(0, 0, 0, 0.42));
+	margin-left: 60px;
+	width: 108px;
+	height: 14px;
+	margin-top: 25px;
+  }
+
+.image1 {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  width: 38px;
+  height: 38px;
+  color: var(--ctr-logo);
+  opacity: 0.5019607843137255;
+}
+.image2 {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  height: 41px;
+  width: 41px;
+  color: var(--ctr-logo);
+  opacity: 1;
+}
+
+.about {
+  height: 63px;
+  max-width: 175px;
+  border: var(--ctr-nav-title) solid 1px;
+}
+
+.service {
+  height: 63px;
+  max-width: 132px;
+  border: var(--ctr-nav-title) solid 1px;
+}
+
+.contact {
+  height: 63px;
+  max-width: 149px;
+  border: var(--ctr-nav-title) solid 1px;
+}
+
+.link-about {
+  height: 15px;
+  display: inline-flex;
+  align-items: flex-start;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--ff-navigation-info);
+  letter-spacing: 0px;
+  margin-top: 25px;
+  margin-right: 12px;
+}
+
+.link-services {
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--ff-navigation-info);
+  letter-spacing: 0px;
+  margin-top: 25px;
+  margin-right: 14px;
+}
+
+.link-contact {
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  align-content: space-around;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--ff-navigation-info);
+  letter-spacing: 0px;
+  margin-top: 25px;
+  margin-right: 12px;
+}
+.about-icon {
+  width: 24px;
+  height: 22px;
+  margin-left: 22px;
+  margin-right: 20px;
+  color: var(--ctr-nav-icons);
+}
+
+.services-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 7px;
+  margin-right: 8px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 21px;
+  margin-left: 11px;
+  margin-right: 12px;
+  left: 365px;
+}
+
+/*VIDEO PLAYER*/
+
+.video-player {
+  top: 61px;
+  width: 640px;
+  height: 327px;
+  bottom: 18px;
+}
+
+.player {
+
+}
+
+.eclipse {
+  margin-left: 294px;
+  margin-right: 278px;
+}
+
+.player-eclipse {
+  position: absolute;
+  height: 4.25em;
+  width: 4.25em;
+  background-color: var(--ctr-logo);
+  border-radius: 34px;
+  opacity: 0.7215686274509804;
+}
+
+/* MIDL BAR BLOCK*/
+
+h3 {
+  font-family: var(--ff-design-text);
+  font-weight: 300;
+  font-size: 1.4375rem;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+/* VIDEO SOCIAL INFO BLOCK */
+
+.input-with-btn {
+  display: flex;
+  width: 217px;
+  height: 30px;
+}
+
+.input-field {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: var(--ctr-nav-title);
+  box-shadow: inset 2.5px 4.33px 2.5px rgba(0, 0, 0, 0.11);
+}
+
+.btn_tweet {
+  background-color: #e8a624;
+  color: var(--ctr-info);
+  font-family: var(--ff-chat);
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: var(--ctr-nav-title);
+  box-shadow: inset 2.5px 4.33px 2.5px rgba(0, 0, 0, 0.11);
+}
+
+/* ITS FEE BLOCK */
