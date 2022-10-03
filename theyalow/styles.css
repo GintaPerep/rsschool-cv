@@ -394,6 +394,7 @@ nav a:focus {
 .eclipse:focus {
   opacity: 0.5;
   cursor: pointer;
+  transform: scale(1.5);
 }
 
 .player-eclipse {
@@ -497,6 +498,7 @@ nav a:focus {
 .icon_sound:focus {
   opacity: 0.6;
   cursor: pointer;
+  transform: scale(1.5);
 }
 
 /* MIDL BAR BLOCK*/
@@ -524,6 +526,12 @@ nav a:focus {
   align-items: center;
 }
 
+.designs:hover,
+.designs:focus {
+  box-shadow: 2px 5px 5px 7px inset var(--ctr-nav-icons);
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .better {
   font-family: var(--ff-design-text);
   font-weight: 300;
@@ -579,6 +587,114 @@ nav a:focus {
 }
 
 /* VIDEO SOCIAL INFO BLOCK */
+
+.video-soc-info {
+  position: absolute;
+  top: 560px;
+  height: 252px;
+  width: 640px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.information {
+  height: 232px;
+  width: 631px;
+}
+
+.text-info {
+  position: absolute;
+  left: 9px;
+  width: 299px;
+  height: 232px;
+  bottom: 9px;
+  margin-top: 570px;
+  margin-right: 332px;
+  background-color: var(--ctr-video-info);
+  z-index: 1;
+}
+
+.info-about {
+  position: absolute;
+  margin-top: 22px;
+  width: 235px;
+  height: 189px;
+  margin-left: 26px;
+  margin-bottom: 21px;
+  margin-right: 38px;
+  font-family: var(--ff-navigation-info);
+  font-weight: 300;
+  line-height: 33px;
+  font-size: 29px;
+}
+
+.plus {
+  position: absolute;
+  top: 204px;
+  margin-left: 277px;
+  margin-bottom: 18px;
+  margin-right: 12px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+
+.plus:hover,
+.plus:focus,
+.plus:active {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: scale(1.5);
+}
+
+.video {
+
+  top: 570px;
+  width: 332px;
+  height: 232px;
+  margin-left: 283px;
+}
+
+.movie {
+  top: 570px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  width: 357px;
+  height: 232px;
+  object-fit: cover;
+  clip-path: inset(0 9px 0 35px);
+}
+
+.eclipse2 {
+position: absolute;
+top: 90px;
+width: 357px;
+z-index: 1;
+}
+
+.eclipse2:hover, .eclipse2:focus {
+	opacity: 0.5;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.player-eclipse2 {
+position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 30px;
+  background-color: #f5c506;
+  margin-left: 163px;
+  margin-right: 132px;
+  z-index: -1;
+}
+
+.shape-player2 {
+width: 18px;
+height: 32px;
+margin-top: 15px;
+margin-left: 186px;
+margin-bottom: 15px;
+}
 
 .input-with-btn {
   display: flex;
