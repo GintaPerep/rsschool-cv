@@ -187,6 +187,7 @@ table {
   --ctr-bullet-text: #a9a9a7;
   --ctr-logo: #f5c506;
   --ctr-nav-icons: #b99403;
+  --ctr-chat-boks: #fceeb5;
 
   --ff-logo: "lucida-sans-italic", serif;
   --ff-navigation-info: "SegoeWP", serif;
@@ -217,7 +218,7 @@ body {
 
 /*HEADER*/
 header {
-  height: 63px;
+  height: 62px;
 }
 
 nav ul {
@@ -247,12 +248,12 @@ nav a:focus {
   position: relative;
   left: 0;
   top: 0;
+  
 }
 
 .parent-logo {
   width: 184px;
-  background-color: var(--ctr-section-free);
-  background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%);
+  background-color: #545050;
   text-decoration: none;
 }
 
@@ -647,7 +648,6 @@ nav a:focus {
 }
 
 .video {
-
   top: 570px;
   width: 332px;
   height: 232px;
@@ -665,20 +665,21 @@ nav a:focus {
 }
 
 .eclipse2 {
-position: absolute;
-top: 90px;
-width: 357px;
-z-index: 1;
+  position: absolute;
+  top: 90px;
+  width: 357px;
+  z-index: 1;
 }
 
-.eclipse2:hover, .eclipse2:focus {
-	opacity: 0.5;
-	cursor: pointer;
-	transform: scale(1.2);
+.eclipse2:hover,
+.eclipse2:focus {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .player-eclipse2 {
-position: absolute;
+  position: absolute;
   width: 61px;
   height: 61px;
   border-radius: 30px;
@@ -689,17 +690,159 @@ position: absolute;
 }
 
 .shape-player2 {
-width: 18px;
-height: 32px;
-margin-top: 15px;
-margin-left: 186px;
-margin-bottom: 15px;
+  width: 18px;
+  height: 32px;
+  margin-top: 15px;
+  margin-left: 186px;
+  margin-bottom: 15px;
+}
+
+.chat {
+  position: absolute;
+  margin-top: 20px;
+  height: 233px;
+  width: 640px;
+  background-color: var(--ctr-social);
+  z-index: -1;
+}
+
+.twitter {
+  width: 324px;
+  height: 233px;
+}
+
+.twitter_icon {
+  margin-left: 85px;
+  margin-top: 58px;
+  margin-right: 396px;
+  margin-bottom: 41px;
+  width: 159px;
+  height: 134px;
+}
+
+.chat_boks1 {
+  position: relative;
+  margin-right: 27px;
+  margin-left: 329px;
+  margin-top: -210px;
+  margin-bottom: 13px;
+}
+.chat_boks2,
+.chat_boks3 {
+  position: relative;
+  margin-right: 27px;
+  margin-left: 329px;
+  margin-bottom: 13px;
+}
+
+.chat_boks1 p,
+.chat_boks2 p,
+.chat_boks3 p {
+  border-radius: 10px;
+  max-width: 285px;
+  height: 43px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.chat_boks1 p::before,
+.chat_boks1 p::after,
+.chat_boks2 p::before,
+.chat_boks2 p::after,
+.chat_boks3 p::before,
+.chat_boks3 p::after {
+  bottom: 0.2rem;
+  content: "";
+  height: 0.75rem;
+  position: absolute;
+}
+
+p.text1 {
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: #ffffff solid 1px;
+}
+p.text2,
+p.text3 {
+  align-items: flex-start;
+  background-color: var(--ctr-chat-boks);
+  border: var(--ctr-chat-boks) solid 1px;
+}
+
+p.text1::before {
+  border-bottom-right-radius: 0.9rem 0.6rem;
+  border-left: 1rem solid #ffffff;
+  left: -0.7rem;
+  transform: translate(0, -0.15rem);
+}
+
+p.text2::before,
+p.text3::before {
+  border-bottom-right-radius: 0.9rem 0.6rem;
+  border-left: 1rem solid var(--ctr-chat-boks);
+  left: -0.7rem;
+  transform: translate(0, -0.15rem);
+}
+
+p.text1::after {
+  background-color: var(--ctr-social);
+  border-bottom-right-radius: 1rem;
+  left: 20px;
+  transform: translate(-31.5px, -3.98px);
+  width: 10px;
+}
+
+p.text2::after,
+p.text3::after {
+  background-color: var(--ctr-social);
+  border-bottom-right-radius: 1rem;
+  left: 20px;
+  transform: translate(-31.5px, -3.98px);
+  width: 10px;
+}
+
+.text1 {
+  font-family: var(--ff-chat);
+  font-size: 13px;
+  text-align: left;
+  padding-left: 28px;
+  padding-top: 6px;
+  padding-right: 40px;
+  color: var(--ctr-chat-text);
+}
+
+.text2 {
+  font-family: var(--ff-chat);
+  font-size: 13px;
+  text-align: left;
+  padding-left: 28px;
+  padding-top: 6px;
+  padding-right: 40px;
+  color: var(--ctr-chat-text);
+}
+
+.text3 {
+  font-family: var(--ff-chat);
+  font-size: 13px;
+  text-align: left;
+  padding-left: 28px;
+  padding-top: 6px;
+  padding-right: 40px;
+  color: var(--ctr-chat-text);
+}
+
+form .input-with-btn {
+  width: 271px;
+  height: 30px;
+  margin-bottom: 12px;
 }
 
 .input-with-btn {
   display: flex;
-  width: 217px;
+  width: 271px;
   height: 30px;
+  margin-left: 336px;
+  margin-right: 33px;
 }
 
 .input-field {
@@ -707,17 +850,121 @@ margin-bottom: 15px;
   border-bottom-left-radius: 10px;
   border: var(--ctr-nav-title);
   box-shadow: inset 2.5px 4.33px 2.5px rgba(0, 0, 0, 0.11);
+  text-align: left;
+  padding-left: 20px;
 }
 
 .btn_tweet {
+  display: flex;
+  text-align: center;
   background-color: #e8a624;
   color: var(--ctr-info);
   font-family: var(--ff-chat);
   font-size: 15px;
+  padding-right: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: var(--ctr-nav-title);
   box-shadow: inset 2.5px 4.33px 2.5px rgba(0, 0, 0, 0.11);
 }
 
+.btn_tweet:hover,
+.btn_tweet:focus,
+.btn_tweet:active {
+  box-sizing: 1px 1.5px 10px rgb(172, 83, 10);
+  background-color: #9b7d08;
+  transform: scale(1.2);
+}
+
 /* ITS FEE BLOCK */
+
+.its-free {
+  margin-top: 655px;
+  width: 640px;
+  height: 487px;
+  background-color: var(--ctr-section-free);
+  
+}
+.lorem-title {
+  padding-top: 43px;
+}
+
+h2.free-title {
+  margin-left: 25px;
+  width: 590px;
+  height: 30px;
+  font-size: 38.6px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--ff-loren-ipsum);
+  color: var(--ctr-logo);
+}
+
+.free-eclips {
+  margin-left: 26px;
+}
+
+.eclipse3 {
+  position: absolute;
+  margin-top: 41px;
+  width: 117px;
+  height: 117px;
+  background-color: var(--ctr-logo);
+  border-radius: 58px;
+}
+
+.its-free-p {
+  position: relative;
+  top: 95px;
+  bottom: 49px;
+  left: 8px;
+  width: 105px;
+  height: 14px;
+  font-size: 19px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--ff-info-title);
+  z-index: 1;
+}
+
+.devices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+img.device1 {
+  margin-left: 57px;
+  margin-top: 70px;
+  width: 323px;
+  height: 255px;
+}
+
+img.device2 {
+  margin-top: 112px;
+  margin-left: 24px;
+  width: 129px;
+  height: 173px;
+}
+
+img.device3 {
+  margin-top: 222px;
+  margin-left: 25px;
+  margin-right: 43px;
+  width: 39px;
+  height: 63px;
+}
+
+/*FOOTER BLOCK*/
+
+footer {
+	display: flex;
+	height: 64px;
+	width: 640px;
+	background-color: var(--ctr-section-free);
+	filter: drop-shadow(-0.105px -2.998px 2.5px rgba(0,0,0,0.75));
+}
