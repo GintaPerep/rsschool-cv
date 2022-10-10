@@ -1868,6 +1868,59 @@ body {
     background-color: var(--ctr-section-free);
     filter: drop-shadow(-0.105px -2.998px 2.5px rgba(0, 0, 0, 0.75));
   }
+
+  .logo1 {
+    position: relative;
+    width: 184px;
+    height: 64px;
+    margin-left: 50px;
+    background-color: var(--ctr-section-free);
+  }
+
+  .parent-logo1 {
+    text-decoration: none;
+  }
+
+  .parent-logo1:hover,
+  .parent-logo1:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .title_logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 29px;
+   font-style: italic;
+    text-transform: uppercase;
+    color: var(--ctr-info);
+    filter: drop-shadow(1px 1.732px 0px rgba(0, 0, 0, 0.42));
+    margin-left: 73px;
+    width: 92px;
+    height: 14px;
+    margin-top: 22px;
+  }
+
+  .one_image {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    width: 51px;
+    height: 51px;
+    color: var(--ctr-logo);
+    opacity: 0.5019607843137255;
+  }
+
+  .two_image {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    height: 54px;
+    width: 54px;
+    color: var(--ctr-logo);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1300px) {
