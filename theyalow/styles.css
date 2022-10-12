@@ -218,12 +218,8 @@ body {
   margin: 0;
 }
 
-ul.logo-ul {
-  display: flex;
-  position: absolute;
-  margin-left:0;
-  top: 16px;
-}
+
+/*HOVER EFFECTS*/
 
 nav li:hover,
 nav li:focus {
@@ -239,14 +235,96 @@ nav li:focus {
   transform: scale(1.1);
 }
 
+.eclipse:hover,
+.eclipse:focus {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.play_icon:hover,
+.play_icon:focus {
+  opacity: 0.6;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.icon_sound:hover,
+.icon_sound:focus {
+  opacity: 0.6;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.shape-right:hover,
+.shape-right:focus,
+.shape-left:hover,
+.shape-left:focus {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.designs:hover,
+.designs:focus {
+  box-shadow: 2px 5px 5px 7px inset var(--ctr-nav-icons);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.plus:hover,
+.plus:focus,
+.plus:active {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: scale(1.5);
+}
+
+.eclipse2:hover,
+.eclipse2:focus {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.btn_tweet:hover,
+.btn_tweet:focus,
+.btn_tweet:active {
+  box-shadow: 1px 1.5px 10px rgb(172, 83, 10);
+  background-color: #9b7d08;
+  transform: scale(1.2);
+}
+
+.plus2:hover,
+.plus2:focus,
+.plus2:active {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: scale(1.5);
+}
+
+.logo1:hover,
+.logo1:focus {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+ /*HEADER*/
+
 @media screen and (min-width: 360px) and (max-width: 640px) {
-  /*HEADER*/
+ 
   .desktop-bk {
     display: none;
   }
 
   header {
     height: 63px;
+  }
+
+  ul.logo-ul {
+    display: flex;
+    position: absolute;
+    margin-left:0;
+    top: 16px;
   }
 
   .logo {
@@ -404,6 +482,13 @@ nav li:focus {
 
   header {
     height: 160px;
+  }
+
+  ul.logo-ul {
+    display: flex;
+    position: absolute;
+    margin-left:0;
+    top: 16px;
   }
 
   .parent-logo {
@@ -573,13 +658,6 @@ nav li:focus {
     z-index: 1;
   }
 
-  .eclipse:hover,
-  .eclipse:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
-
   .player-eclipse {
     position: absolute;
     height: 4.25em;
@@ -623,13 +701,7 @@ nav li:focus {
     margin-right: 8px;
     z-index: 1;
   }
-  .play_icon:hover,
-  .play_icon:focus {
-    opacity: 0.6;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
-
+ 
   .player_track {
     position: absolute;
     width: 407px;
@@ -676,12 +748,7 @@ nav li:focus {
     height: 15px;
     margin-left: 568px;
   }
-  .icon_sound:hover,
-  .icon_sound:focus {
-    opacity: 0.6;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
+
   .shapes {
     display: none;
   }
@@ -735,13 +802,6 @@ nav li:focus {
     z-index: 1;
   }
 
-  .eclipse:hover,
-  .eclipse:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
-
   .player-eclipse {
     position: absolute;
     height: 4.25em;
@@ -784,12 +844,6 @@ nav li:focus {
     margin-bottom: 5px;
     margin-right: 8px;
     z-index: 1;
-  }
-  .play_icon:hover,
-  .play_icon:focus {
-    opacity: 0.6;
-    cursor: pointer;
-    transform: scale(1.5);
   }
 
   .player_track {
@@ -839,12 +893,6 @@ nav li:focus {
     height: 15px;
     margin-left: 568px;
   }
-  .icon_sound:hover,
-  .icon_sound:focus {
-    opacity: 0.6;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
 
   .shape-right {
     position: absolute;
@@ -876,14 +924,6 @@ nav li:focus {
     margin-top: 19px;
     margin-left: 10px;
   }
-
-  .shape-right:hover,
-  .shape-right:focus,
-  .shape-left:hover,
-  .shape-left:focus {
-    opacity: 0.5;
-    transform: scale(1.2);
-  }
 }
 
 /* MIDL BAR BLOCK*/
@@ -909,13 +949,6 @@ nav li:focus {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-
-  .designs:hover,
-  .designs:focus {
-    box-shadow: 2px 5px 5px 7px inset var(--ctr-nav-icons);
-    cursor: pointer;
-    transform: scale(1.1);
   }
 
   .better {
@@ -993,13 +1026,6 @@ nav li:focus {
     width: 340px;
     border-left: #acaca9 solid 1px;
     border-right: #acaca9 solid 1px;
-  }
-
-  .designs:hover,
-  .designs:focus {
-    box-shadow: 2px 5px 5px 7px inset var(--ctr-nav-icons);
-    cursor: pointer;
-    transform: scale(1.1);
   }
 
   .better {
@@ -1121,14 +1147,6 @@ nav li:focus {
     z-index: 1;
   }
 
-  .plus:hover,
-  .plus:focus,
-  .plus:active {
-    cursor: pointer;
-    opacity: 0.75;
-    transform: scale(1.5);
-  }
-
   .plus2 {
     display: none;
   }
@@ -1153,13 +1171,6 @@ nav li:focus {
     top: 105px;
     width: 357px;
     z-index: 1;
-  }
-
-  .eclipse2:hover,
-  .eclipse2:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    transform: scale(1.2);
   }
 
   .player-eclipse2 {
@@ -1362,14 +1373,6 @@ nav li:focus {
     box-shadow: inset 2.5px 4.33px 2.5px rgba(0, 0, 0, 0.11);
   }
 
-  .btn_tweet:hover,
-  .btn_tweet:focus,
-  .btn_tweet:active {
-    box-shadow: 1px 1.5px 10px rgb(172, 83, 10);
-    background-color: #9b7d08;
-    transform: scale(1.2);
-  }
-
   .date_number {
     display: none;
   }
@@ -1453,14 +1456,6 @@ nav li:focus {
     z-index: 1;
   }
 
-  .plus:hover,
-  .plus:focus,
-  .plus:active {
-    cursor: pointer;
-    opacity: 0.75;
-    transform: scale(1.5);
-  }
-
   .video {
     width: 463px;
     height: 233px;
@@ -1508,13 +1503,6 @@ nav li:focus {
     top: 201px;
     width: 357px;
     z-index: 1;
-  }
-
-  .eclipse2:hover,
-  .eclipse2:focus {
-    opacity: 0.5;
-    cursor: pointer;
-    transform: scale(1.2);
   }
 
   .player-eclipse2 {
@@ -1568,14 +1556,6 @@ nav li:focus {
     margin-right: 21px;
     width: 12px;
     height: 12px;
-  }
-
-  .plus2:hover,
-  .plus2:focus,
-  .plus2:active {
-    cursor: pointer;
-    opacity: 0.75;
-    transform: scale(1.5);
   }
 
   .number {
@@ -1865,12 +1845,6 @@ nav li:focus {
     text-decoration: none;
   }
 
-  .logo1:hover,
-  .logo1:focus {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
   .title_logo {
     font-family: var(--ff-logo);
     text-align: center;
@@ -1928,12 +1902,6 @@ nav li:focus {
     text-decoration: none;
   }
 
-  .logo1:hover,
-  .logo1:focus {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
   .title_logo {
     font-family: var(--ff-logo);
     text-align: center;
@@ -1968,5 +1936,4 @@ nav li:focus {
     color: var(--ctr-logo);
     opacity: 1;
   }
-
 }
