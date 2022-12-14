@@ -9,14 +9,15 @@
     
     for (let arg of str)
        this.text += arg;
-       this.text = this.greeting + this.text
+    
+    this.text = this.greeting + this.text
     console.log(`'${this.text}'`)
   }
 
   BuilderES5.prototype.minus = function (n) {
-       let result = this.text.substring(0, this.text.length - n)
+    this.text = this.text.substring(0, this.text.length - n)
     
-    console.log(`'${result}'`)
+    console.log(`'${this.text}'`)
   }
 
   function StringBuilder(greeting) {
