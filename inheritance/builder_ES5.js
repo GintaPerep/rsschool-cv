@@ -21,7 +21,7 @@
   }
 
   BuilderES5.prototype.multiply = function (int) {
-   this.text = this.text.repeat(int)
+   this.text = this.text.join(n, int)
    
     console.log(`'${this.text}'`)
   }
@@ -33,7 +33,7 @@
   }
 
   BuilderES5.prototype.remove = function (str) {
-    this.text = this.text.replaceAll(str, '')
+    this.text = this.text.slice(str, 2)
     
     console.log(`'${this.text}';`)
   }
