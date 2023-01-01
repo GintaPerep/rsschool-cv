@@ -9,34 +9,39 @@ class Builder {
 
         for (let arg of n) this.sum += arg;
         console.log(this.sum)
-      return this.sum;
+      return this;
     }
 
     minus(...n) {
         for (let arg of n) this.sum -= arg;
         console.log(this.sum)
-        return this.sum;
+        this.sum
+        return this;
     }
 
     multiply(n) {
         this.sum *= n;
         console.log(this.sum)
-        return this.sum;
+        return this;
     }
 
     divide(n) {
         this.sum /= n;
         console.log(this.sum)
-        return this.sum;
+        return this;
     }
 
     mod(n) {
         this.sum %= n;
         console.log(this.sum)
-        return this.sum;
+        return this;
     }
 
-    get() { console.log(`-> ${this.sum}`)}
+    get() { 
+        this.sum;
+        console.log(`-> ${this.sum}`)
+        return this;
+    }
     
 
     static random(from,to) {
@@ -54,12 +59,15 @@ IntBuilder.random(10,100)
 
 const intBuilder = new IntBuilder(10);
 
-intBuilder.plus(2,3,2)
-intBuilder.minus(1,2)
-intBuilder.multiply(2)
-intBuilder.divide(4)
-intBuilder.mod(3)
-intBuilder.get()
+console.log(
+    intBuilder
+    .plus(2,3,2)
+    .minus(1,2)
+    .multiply(2)
+    .divide(4)
+    .mod(3)
+    .get()
+)
 
 
 
