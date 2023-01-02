@@ -1,45 +1,42 @@
 class Builder {
     constructor(_initNum = 0) {
        this.initNum = _initNum;
-       this.sum = 0;
     }
 
     plus(...n)  {
-       this.sum = this.initNum;
-
-        for (let arg of n) this.sum += arg;
-        console.log(this.sum)
+        for (let arg of n) this.initNum += arg;
+        console.log(this.initNum)
       return this;
     }
 
     minus(...n) {
-        for (let arg of n) this.sum -= arg;
-        console.log(this.sum)
-        this.sum
+        for (let arg of n) this.initNum -= arg;
+        console.log(this.initNum)
+        this.initNum
         return this;
     }
 
     multiply(n) {
-        this.sum *= n;
-        console.log(this.sum)
+        this.initNum *= n;
+        console.log(this.initNum)
         return this;
     }
 
     divide(n) {
-        this.sum /= n;
-        console.log(this.sum)
+        this.initNum /= n;
+        console.log(this.initNum)
         return this;
     }
 
     mod(n) {
-        this.sum %= n;
-        console.log(this.sum)
+        this.initNum %= n;
+        console.log(this.initNum)
         return this;
     }
 
     get() { 
-        this.sum;
-        console.log(`-> ${this.sum}`)
+        this.initNum;
+        console.log(this.initNum)
         return this;
     }
     

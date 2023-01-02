@@ -2,57 +2,56 @@
   
   function BuilderES5 (greeting) {
     this.greeting = greeting
-    this.text = ''
   }
   
   BuilderES5.prototype.plus = function (...str) {
     
     for (let arg of str)
-       this.text += arg;
+       this.greeting += arg;
     
-    this.text = this.greeting.concat(this.text)
-    console.log(`'${this.text}'`)
+    console.log(`'${this.greeting}'`)
     return this;
   }
 
   BuilderES5.prototype.minus = function (n) {
-    this.text = this.text.slice(0, - n)
+    this.greeting = this.greeting.slice(0, - n)
     
-    console.log(`'${this.text}'`)
+    console.log(`'${this.greeting}'`)
     return this;
   }
 
   BuilderES5.prototype.multiply = function (int) {
-   this.text = Array(int + 1).join(this.text);
+   this.greeting = Array(int + 1).join(this.greeting);
    
-    console.log(`'${this.text}'`)
+    console.log(`'${this.greeting}'`)
     return this;
   }
 
   BuilderES5.prototype.divide = function (n) {
-    this.text = this.text.slice(0, n)
+    const k = Math.floor(this.greeting.length /n)
+    this.greeting = this.greeting.slice(0, k)
  
-    console.log(`'${this.text}';`)
+    console.log(`'${this.greeting}';`)
     return this;
   }
 
   BuilderES5.prototype.remove = function (str) {
-    this.text = this.text.slice(str, 2)
+    this.greeting = this.greeting.slice(str, 2)
     
-    console.log(`'${this.text}';`)
+    console.log(`'${this.greeting}';`)
     return this;
   }
 
   BuilderES5.prototype.sub = function (from,n) {
 
-    this.text = this.text.substring(from, n + 1)
+    this.greeting = this.greeting.substring(from, n + 1)
     
-    console.log(`'${this.text}';`)
+    console.log(`'${this.greeting}';`)
     return this;
   }
 
   BuilderES5.prototype.get = function () { 
-    console.log(`->'${this.text}';`)
+    console.log(`'${this.greeting}';`)
     return this;
   }
 
