@@ -36,7 +36,7 @@
   }
 
   BuilderES5.prototype.remove = function (str) {
-    this.greeting = this.greeting.slice(str, 2)
+    this.greeting = this.greeting.split(str).join('')
     
     console.log(`'${this.greeting}';`)
     return this;
